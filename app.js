@@ -52,7 +52,7 @@ function check() {
     correct++;
   }
 
-  var message = ["good prompt", "medium prompt", "bad prompt"];
+  var message = ["good job", "kinda good job", "bad job"];
   var images = ["img/happyface.png", "img/straightface.png", "img/sadface.png"];
 
   var range;
