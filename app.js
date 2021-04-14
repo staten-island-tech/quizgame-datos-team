@@ -12,7 +12,7 @@ function check() {
   var question10 = document.quiz.question10.value;
   var correct = 0;
   // for every correct question you get 1 more unit added to the value of "correct"
-  if (question1 == "a") {
+  if (question1 == "c") {
     correct++;
   }
 
@@ -20,27 +20,27 @@ function check() {
     correct++;
   }
 
-  if (question3 == "a") {
+  if (question3 == "b") {
     correct++;
   }
 
-  if (question4 == "a") {
+  if (question4 == "c") {
     correct++;
   }
 
-  if (question5 == "a") {
+  if (question5 == "b") {
     correct++;
   }
 
-  if (question6 == "a") {
+  if (question6 == "3") {
     correct++;
   }
 
-  if (question7 == "a") {
+  if (question7 == "b") {
     correct++;
   }
 
-  if (question8 == "a") {
+  if (question8 == "b") {
     correct++;
   }
 
@@ -48,11 +48,11 @@ function check() {
     correct++;
   }
 
-  if (question10 == "a") {
+  if (question10 == "b") {
     correct++;
   }
 
-  var message = ["good prompt", "medium prompt", "bad prompt"];
+  var message = ["true russian", "medium true", "not russian at all"];
   var images = ["img/happyface.png", "img/straightface.png", "img/sadface.png"];
 
   var range;
