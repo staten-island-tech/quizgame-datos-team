@@ -1,4 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+#after_submit {
+  visibility: hidden;
+}
 /*# sourceMappingURL=style.css.map */
