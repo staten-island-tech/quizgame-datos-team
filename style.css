@@ -2,7 +2,49 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#quiz {
+  margin-left: 1rem;
+  background: #f5b342;
+  padding: 2rem;
+  width: 40rem;
+  border-radius: 2rem;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+#button {
+  background: #eb9500;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: black;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#button:hover {
+  background: #de9516;
+}
+
 #after_submit {
   visibility: hidden;
+  background: #f5b342;
+  padding: 1rem;
+  width: 40rem;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+#picture {
+  width: 37.5rem;
+  height: 24.5rem;
+}
+
+#mc {
+  display: inline;
 }
 /*# sourceMappingURL=style.css.map */

@@ -52,6 +52,7 @@ function check() {
   }
 
   var message = ["good prompt", "medium prompt", "bad prompt"];
+  var images = ["img/happyface.png", "img/straightface.png", "img/sadface.png"];
 
   var range;
 
@@ -71,4 +72,5 @@ function check() {
   document.getElementById("message").innerHTML = message[range];
   document.getElementById("number_correct").innerHTML =
     "You got " + correct + " correct.";
+  document.getElementById("images").src = images[range];
 }
