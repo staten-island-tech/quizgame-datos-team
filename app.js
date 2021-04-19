@@ -12,7 +12,7 @@ function check() {
   var question10 = document.quiz.question10.value;
   var correct = 0;
   // for every correct question you get 1 more unit added to the value of "correct"
-  if (question1 == "c") {
+  if (question1 == "a") {
     correct++;
   }
 
@@ -20,27 +20,27 @@ function check() {
     correct++;
   }
 
-  if (question3 == "b") {
+  if (question3 == "a") {
     correct++;
   }
 
-  if (question4 == "c") {
+  if (question4 == "a") {
     correct++;
   }
 
-  if (question5 == "b") {
+  if (question5 == "a") {
     correct++;
   }
 
-  if (question6 == "3") {
+  if (question6 == "a") {
     correct++;
   }
 
-  if (question7 == "b") {
+  if (question7 == "a") {
     correct++;
   }
 
-  if (question8 == "b") {
+  if (question8 == "a") {
     correct++;
   }
 
@@ -48,12 +48,16 @@ function check() {
     correct++;
   }
 
-  if (question10 == "b") {
+  if (question10 == "a") {
     correct++;
   }
 
+<<<<<<< HEAD
   var message = ["true russian", "medium true", "not russian at all"];
   var message = ["good job", "kinda good job", "bad job"];
+=======
+  var message = ["good prompt", "medium prompt", "bad prompt"];
+>>>>>>> parent of c909032 (yeee)
   var images = ["img/happyface.png", "img/straightface.png", "img/sadface.png"];
 
   var range;
