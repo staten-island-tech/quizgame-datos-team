@@ -52,16 +52,10 @@ function check() {
     correct++;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   var message = ["true russian", "medium true", "not russian at all"];
   var message = ["good job", "kinda good job", "bad job"];
-=======
-  var message = ["good prompt", "medium prompt", "bad prompt"];
->>>>>>> parent of c909032 (yeee)
-=======
-  var message = ["good prompt", "medium prompt", "bad prompt"];
->>>>>>> parent of c909032 (yeee)
+  
   var images = ["img/happyface.png", "img/straightface.png", "img/sadface.png"];
 
   var range;
