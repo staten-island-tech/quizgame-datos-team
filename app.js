@@ -52,10 +52,14 @@ function check() {
     correct++;
   }
 
+<<<<<<< HEAD
 
   var message = ["true russian", "medium true", "not russian at all"];
   var message = ["good job", "kinda good job", "bad job"];
   
+=======
+  var message = ["good prompt", "medium prompt", "bad prompt"];
+>>>>>>> parent of e02ff0d (k)
   var images = ["img/happyface.png", "img/straightface.png", "img/sadface.png"];
 
   var range;
