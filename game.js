@@ -13,6 +13,7 @@ let availableQuestions = []
 let questions = [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,6 +109,8 @@ const MAX_QUESTIONS = 4;
 =======
 =======
 >>>>>>> parent of b6bec7b (yo)
+=======
+>>>>>>> parent of b6bec7b (yo)
     {
         question: 'What is 2 + 2?',
         choice1: '2',
@@ -146,6 +149,9 @@ const MAX_QUESTIONS = 4;
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b6bec7b (yo)
+=======
 >>>>>>> parent of b6bec7b (yo)
 =======
 >>>>>>> parent of b6bec7b (yo)
@@ -160,6 +166,7 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -198,10 +205,35 @@ choices.forEach(choice => {
 
 <<<<<<< HEAD
 =======
+=======
 
-  acceptingAnswers = true;
-};
+        return window.location.assign('/end.html')
+    }
 
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
+
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswers = true
+}
+>>>>>>> parent of b6bec7b (yo)
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+<<<<<<< HEAD
 >>>>>>> parent of dd43a90 (yo)
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
@@ -347,5 +379,33 @@ saveHighScore = (e) => {
 startGame()
 >>>>>>> parent of b6bec7b (yo)
 =======
+startGame()
+>>>>>>> parent of b6bec7b (yo)
+=======
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+
+        }, 1000)
+    })
+})
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+
 startGame()
 >>>>>>> parent of b6bec7b (yo)
