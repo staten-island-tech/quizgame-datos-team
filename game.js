@@ -12,6 +12,7 @@ let availableQuestions = []
 
 let questions = [
 <<<<<<< HEAD
+<<<<<<< HEAD
   {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -105,6 +106,8 @@ const MAX_QUESTIONS = 4;
 const MAX_QUESTIONS = 4;
 >>>>>>> parent of dd43a90 (yo)
 =======
+=======
+>>>>>>> parent of b6bec7b (yo)
     {
         question: 'What is 2 + 2?',
         choice1: '2',
@@ -142,6 +145,9 @@ const MAX_QUESTIONS = 4;
 
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
+<<<<<<< HEAD
+>>>>>>> parent of b6bec7b (yo)
+=======
 >>>>>>> parent of b6bec7b (yo)
 
 startGame = () => {
@@ -154,31 +160,43 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-
 <<<<<<< HEAD
 
-    return window.location.assign("/end.html");
-  }
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b6bec7b (yo)
 
-  questionCounter++;
-  progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+        return window.location.assign('/end.html')
+    }
 
-  const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
-  currentQuestion = availableQuestions[questionsIndex];
-  question.innerText = currentQuestion.question;
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
 
-  choices.forEach((choice) => {
-    const number = choice.dataset["number"];
-    choice.innerText = currentQuestion["choice" + number];
-  });
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
 
+    availableQuestions.splice(questionsIndex, 1)
+
+<<<<<<< HEAD
   availableQuestions.splice(questionsIndex, 1);
 <<<<<<< HEAD
+=======
+    acceptingAnswers = true
+}
+>>>>>>> parent of b6bec7b (yo)
 
-  acceptingAnswers = true;
-};
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
 
+<<<<<<< HEAD
 =======
 
   acceptingAnswers = true;
@@ -188,32 +206,34 @@ getNewQuestion = () => {
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
+=======
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+>>>>>>> parent of b6bec7b (yo)
 
-    acceptingAnswers = false;
-    const selectedChoice = e.target;
-    const selectedAnswer = selectedChoice.dataset["number"];
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
-    let classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
 
-    if (classToApply === "correct") {
-      incrementScore(SCORE_POINTS);
-    }
+        selectedChoice.parentElement.classList.add(classToApply)
 
-    selectedChoice.parentElement.classList.add(classToApply);
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
 
-    setTimeout(() => {
-      selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
-    }, 1000);
-  });
-});
+        }, 1000)
+    })
+})
 
-incrementScore = (num) => {
-  score += num;
-  scoreText.innerText = score;
-};
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
 
+<<<<<<< HEAD
 startGame();
 <<<<<<< HEAD
 =======
@@ -323,6 +343,9 @@ saveHighScore = (e) => {
 >>>>>>> parent of dd43a90 (yo)
 =======
 >>>>>>> parent of dd43a90 (yo)
+=======
+startGame()
+>>>>>>> parent of b6bec7b (yo)
 =======
 startGame()
 >>>>>>> parent of b6bec7b (yo)
