@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+<<<<<<< HEAD
 :root {
   background-color: #1d1a1a;
 }
@@ -10,6 +11,19 @@
   padding: 0;
   font-size: 62.5%;
   font-family: 'Nova Square', cursive;
+=======
+
+:root {
+  background-color: rgb(29, 26, 26);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Nova Square", cursive;
+>>>>>>> parent of dd43a90 (yo)
 }
 
 h1 {
@@ -26,6 +40,7 @@ h2 {
 .container {
   width: 100vw;
   height: 100vh;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,12 +50,18 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> parent of dd43a90 (yo)
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .flex-column {
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,6 +84,19 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+=======
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+>>>>>>> parent of dd43a90 (yo)
 }
 
 .text-center {
@@ -80,14 +114,24 @@ h2 {
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
+<<<<<<< HEAD
   color: #1c1a1a;
   background: -webkit-gradient(linear, left top, right top, from(#125cff), to(#0066ff));
   background: linear-gradient(90deg, #125cff 0%, #0066ff 100%);
+=======
+  color: rgb(28, 26, 26);
+  background: linear-gradient(
+    90deg,
+    rgb(18, 92, 255) 0%,
+    rgb(0, 102, 255) 100%
+  );
+>>>>>>> parent of dd43a90 (yo)
   border-radius: 4px;
 }
 
 .btn:hover {
   cursor: pointer;
+<<<<<<< HEAD
   -webkit-box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
           box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
   -webkit-transition: -webkit-transform 150ms;
@@ -96,10 +140,16 @@ h2 {
   transition: transform 150ms, -webkit-transform 150ms;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+=======
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+  transition: transform 150ms;
+  transform: scale(1.03);
+>>>>>>> parent of dd43a90 (yo)
 }
 
 .btn[disabled]:hover {
   cursor: not-allowed;
+<<<<<<< HEAD
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform: none;
@@ -114,6 +164,22 @@ h2 {
 #highscore-btn:hover {
   -webkit-box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
           box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
+=======
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 247, 9) 0%,
+    rgb(240, 221, 6) 100%
+  );
+}
+
+#highscore-btn:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
+>>>>>>> parent of dd43a90 (yo)
 }
 
 .fa-crown {
@@ -124,6 +190,7 @@ h2 {
 /* End Page CSS */
 .end-form-container {
   width: 100%;
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,6 +201,11 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> parent of dd43a90 (yo)
   max-width: 30rem;
 }
 
@@ -143,6 +215,7 @@ input {
   padding: 1.5rem;
   font-size: 1.8rem;
   border: none;
+<<<<<<< HEAD
   -webkit-box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
           box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
@@ -157,6 +230,9 @@ input:-ms-input-placeholder {
 
 input::-ms-input-placeholder {
   color: #aaa;
+=======
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+>>>>>>> parent of dd43a90 (yo)
 }
 
 input::placeholder {
@@ -182,6 +258,106 @@ input::placeholder {
 .fa-home {
   margin-left: 1rem;
   font-size: 2rem;
+<<<<<<< HEAD
   color: #1c1a1a;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+  color: rgb(28, 26, 26);
+}
+body {
+  color: #fff;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
+  background: rgb(18, 93, 255);
+  font-size: 3rem;
+  min-width: 80rem;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
+  transform: scale(1.02);
+  transform: transform 100ms;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: white;
+}
+
+.choice-text {
+  padding: 2rem;
+  width: 100%;
+}
+
+.correct {
+  background: linear-gradient(
+    32deg,
+    rgba(11, 223, 36) 0%,
+    rgb(41, 232, 111) 100%
+  );
+}
+
+.incorrect {
+  background: linear-gradient(
+    32deg,
+    rgba(230, 29, 29, 1) 0%,
+    rgb(224, 11, 11, 1) 100%
+  );
+}
+
+/* Heads up Display */
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid rgb(11, 223, 36);
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: rgb(11, 223, 36);
+  width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}
+body {
+  color: #fff;
+}
+
+#highScoresList {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+>>>>>>> parent of dd43a90 (yo)
