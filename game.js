@@ -13,6 +13,7 @@ let availableQuestions = [];
 let questions = [
   {
 <<<<<<< HEAD
+<<<<<<< HEAD
     question: "What is the captial of Russia?",
     choice1: "Moscow",
     choice2: "Saint Petersburg",
@@ -20,12 +21,17 @@ let questions = [
     choice4: "Sochi",
     answer: 1,
 =======
+=======
+>>>>>>> parent of dd43a90 (yo)
     question: "What is 2 + 2?",
     choice1: "2",
     choice2: "4",
     choice3: "21",
     choice4: "17",
     answer: 2,
+<<<<<<< HEAD
+>>>>>>> parent of dd43a90 (yo)
+=======
 >>>>>>> parent of dd43a90 (yo)
   },
   {
@@ -37,6 +43,7 @@ let questions = [
     answer: 1,
   },
   {
+<<<<<<< HEAD
 <<<<<<< HEAD
     question: "Where can you find Machu Picchu?",
     choice1: "Columbia",
@@ -61,6 +68,8 @@ let questions = [
     choice4: "Vatican City",
     answer: 3,
 =======
+=======
+>>>>>>> parent of dd43a90 (yo)
     question:
       "What percent of American adults believe that chocolate milk comes from brown cows?",
     choice1: "20%",
@@ -77,13 +86,20 @@ let questions = [
     choice3: "15-20%",
     choice4: "30%-40%",
     answer: 1,
+<<<<<<< HEAD
+>>>>>>> parent of dd43a90 (yo)
+=======
 >>>>>>> parent of dd43a90 (yo)
   },
 ];
 
 const SCORE_POINTS = 100;
 <<<<<<< HEAD
+<<<<<<< HEAD
 const MAX_QUESTIONS = 5;
+=======
+const MAX_QUESTIONS = 4;
+>>>>>>> parent of dd43a90 (yo)
 =======
 const MAX_QUESTIONS = 4;
 >>>>>>> parent of dd43a90 (yo)
@@ -98,7 +114,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", score);
-<<<<<<< HEAD
+
 
     return window.location.assign("/end.html");
   }
@@ -117,10 +133,17 @@ getNewQuestion = () => {
   });
 
   availableQuestions.splice(questionsIndex, 1);
+<<<<<<< HEAD
 
   acceptingAnswers = true;
 };
 
+=======
+
+  acceptingAnswers = true;
+};
+
+>>>>>>> parent of dd43a90 (yo)
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
@@ -151,6 +174,7 @@ incrementScore = (num) => {
 };
 
 startGame();
+<<<<<<< HEAD
 =======
 
     return window.location.assign("/end.html");
@@ -204,6 +228,8 @@ incrementScore = (num) => {
 };
 
 startGame();
+=======
+>>>>>>> parent of dd43a90 (yo)
 
 const highScoresList = document.querySelector("#highScoresList");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
@@ -247,4 +273,7 @@ saveHighScore = (e) => {
   localStorage.setItem("highScores", JSON.stringify(highScores));
   window.location.assign("/");
 };
+<<<<<<< HEAD
+>>>>>>> parent of dd43a90 (yo)
+=======
 >>>>>>> parent of dd43a90 (yo)
