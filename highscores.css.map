@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,eAAe,CAAC;EACZ,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;CACtB;;AAED,AAAA,WAAW,CAAC;EACR,SAAS,EAAE,MAAM;EACjB,aAAa,EAAE,MAAM;CACxB",
-    "sources": [
-        "highscores.scss"
-    ],
-    "names": [],
-    "file": "highscores.css"
-}

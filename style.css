@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+>>>>>>> parent of b6bec7b (yo)
 :root {
-  background-color: #1d1a1a;
+    background-color: rgb(29, 26, 26)
 }
 
 * {
+<<<<<<< HEAD
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -30,20 +36,31 @@
 >>>>>>> parent of dd43a90 (yo)
 =======
 >>>>>>> parent of dd43a90 (yo)
+=======
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+>>>>>>> parent of b6bec7b (yo)
 }
 
 h1 {
-  font-size: 5.4rem;
-  color: #fff;
-  margin-bottom: 5rem;
+    font-size: 5.4rem;
+    color: #fff;
+    margin-bottom: 5rem;
 }
 
+
+
 h2 {
-  font-size: 4.2rem;
-  margin-bottom: 4rem;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+
 }
 
 .container {
+<<<<<<< HEAD
   width: 100vw;
   height: 100vh;
 <<<<<<< HEAD
@@ -82,18 +99,30 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+=======
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+>>>>>>> parent of b6bec7b (yo)
 }
 
 .flex-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .justify-center {
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -123,17 +152,21 @@ h2 {
 .justify-center {
   justify-content: center;
 >>>>>>> parent of dd43a90 (yo)
+=======
+    justify-content: center;
+>>>>>>> parent of b6bec7b (yo)
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .btn {
+<<<<<<< HEAD
   font-size: 2.4rem;
   padding: 2rem 0;
   width: 30rem;
@@ -193,14 +226,38 @@ h2 {
           box-shadow: none;
   -webkit-transform: none;
           transform: none;
+=======
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+>>>>>>> parent of b6bec7b (yo)
 }
 
 #highscore-btn {
-  background: -webkit-gradient(linear, left top, right top, from(#fff709), to(#f0dd06));
-  background: linear-gradient(90deg, #fff709 0%, #f0dd06 100%);
+    background: linear-gradient(90deg, rgb(255, 247, 9) 0%, rgb(240, 221, 6) 100%);
 }
 
 #highscore-btn:hover {
+<<<<<<< HEAD
   -webkit-box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
           box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
 =======
@@ -235,15 +292,19 @@ h2 {
 #highscore-btn:hover {
   box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.5);
 >>>>>>> parent of dd43a90 (yo)
+=======
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,0,0.5)
+>>>>>>> parent of b6bec7b (yo)
 }
 
 .fa-crown {
-  font-size: 2.5rem;
-  margin-left: 1rem;
+    font-size: 2.5rem;
+    margin-left: 1rem;
 }
 
 /* End Page CSS */
 .end-form-container {
+<<<<<<< HEAD
   width: 100%;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -298,29 +359,46 @@ input::-ms-input-placeholder {
 =======
   box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 >>>>>>> parent of dd43a90 (yo)
+=======
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+>>>>>>> parent of b6bec7b (yo)
 }
 
 input::placeholder {
-  color: #aaa;
+    color: #aaa;
 }
 
 #username {
-  margin-bottom: 3rem;
-  width: 100%;
-  outline: none;
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
 }
 
 #end-text {
-  font-size: 2.4rem;
-  color: #fff;
-  text-align: center;
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
 }
 
 #saveScoreBtn {
-  border: none;
+    border: none;
 }
 
 .fa-home {
+<<<<<<< HEAD
   margin-left: 1rem;
   font-size: 2rem;
 <<<<<<< HEAD
@@ -432,3 +510,9 @@ body {
 >>>>>>> parent of dd43a90 (yo)
 =======
 >>>>>>> parent of dd43a90 (yo)
+=======
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(28, 26, 26)
+}
+>>>>>>> parent of b6bec7b (yo)
